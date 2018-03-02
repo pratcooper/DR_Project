@@ -1,0 +1,1535 @@
+<?xml version="1.0" ?>
+<srcfile name="BezierLabelLocator.java" file_path="/Users/valerio/Research/Code/Source Code Comments Classification/comments_classification/media/jhotdraw/7.4.1/jhotdraw7zip/extracted/jhotdraw7/src/main/java/org/jhotdraw/draw/locator/BezierLabelLocator.java" >
+ <node name="COMPILATION_UNIT" line="0" instruction_class="COMPILATION_UNIT" instruction="COMPILATION_UNIT">
+   <node name="PACKAGE_DECLARATION" line="0" instruction_class="KEYWORD" instruction="PACKAGE_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+           <node name="org" line="15" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="jhotdraw" line="15" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="draw" line="15" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="locator" line="15" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <node name="SINGLE_TYPE_IMPORT_DECLARATION" line="0" instruction_class="KEYWORD" instruction="IMPORT_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+           <node name="org" line="17" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="jhotdraw" line="17" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="draw" line="17" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="BezierFigure" line="17" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <node name="TYPE_IMPORT_ON_DEMAND_DECLARATION" line="0" instruction_class="KEYWORD" instruction="IMPORT_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="org" line="18" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="jhotdraw" line="18" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="draw" line="18" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <node name="TYPE_IMPORT_ON_DEMAND_DECLARATION" line="0" instruction_class="KEYWORD" instruction="IMPORT_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="org" line="19" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="jhotdraw" line="19" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="geom" line="19" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <node name="TYPE_IMPORT_ON_DEMAND_DECLARATION" line="0" instruction_class="KEYWORD" instruction="IMPORT_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="java" line="20" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="awt" line="20" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="geom" line="20" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <node name="TYPE_IMPORT_ON_DEMAND_DECLARATION" line="0" instruction_class="KEYWORD" instruction="IMPORT_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="org" line="21" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="jhotdraw" line="21" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="xml" line="21" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <class_statement_node name="CLASS_DECLARATION" line="0" instruction_class="CLASS_DECLARATION" instruction="CLASS_KEYWORD">
+     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+       <node name="public" line="35" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+       </node>
+     </node>
+     <node name="BezierLabelLocator" line="35" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+     </node>
+     <node name="implements" line="35" instruction_class="KEYWORD" instruction="INTERFACE_IMPLEMENTATION_KEYWORD">
+       <node name="Locator" line="35" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+       </node>
+       <node name="DOMStorable" line="35" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+       </node>
+     </node>
+     <node name="CLASS_BODY" line="0" instruction_class="CLASS_BODY" instruction="CLASS_BODY">
+       <statement_node name="FIELD_DECLARATION" line="0" instruction_class="FIELD_DECLARATION" instruction="FIELD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="private" line="36" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="double" line="36" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+         </node>
+         <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+           <node name="relativePosition" line="36" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+       </statement_node>
+       <statement_node name="FIELD_DECLARATION" line="0" instruction_class="FIELD_DECLARATION" instruction="FIELD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="private" line="37" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="double" line="37" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+         </node>
+         <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+           <node name="angle" line="37" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+       </statement_node>
+       <statement_node name="FIELD_DECLARATION" line="0" instruction_class="FIELD_DECLARATION" instruction="FIELD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="private" line="38" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="double" line="38" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+         </node>
+         <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+           <node name="distance" line="38" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+       </statement_node>
+       <method_statement_node name="CONSTRUCTOR_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="CONSTRUCTOR_METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="44" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="BezierLabelLocator" line="44" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+         </node>
+         <statement_node name="CONSTRUCTOR_BODY" line="0" instruction_class="CONSTRUCTOR_BODY" instruction="CONSTRUCTOR_BODY">
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="CONSTRUCTOR_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="CONSTRUCTOR_METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="55" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="BezierLabelLocator" line="55" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="double" line="55" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="relativePosition" line="55" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="double" line="55" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="angle" line="55" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="double" line="55" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="distance" line="55" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="CONSTRUCTOR_BODY" line="0" instruction_class="CONSTRUCTOR_BODY" instruction="CONSTRUCTOR_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="56" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                 </node>
+                 <node name="relativePosition" line="56" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="relativePosition" line="56" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="57" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                 </node>
+                 <node name="angle" line="57" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="angle" line="57" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="58" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                 </node>
+                 <node name="distance" line="58" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="distance" line="58" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="61" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+           <node name="Point2D" line="61" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="Double" line="61" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="locate" line="61" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Figure" line="61" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="owner" line="61" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="return" line="62" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="getRelativePoint" line="62" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                     <node name="BezierFigure" line="62" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     </node>
+                     <node name="owner" line="62" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="64" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+           <node name="Point2D" line="64" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="Double" line="64" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="locate" line="64" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Figure" line="64" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="owner" line="64" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Figure" line="64" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="label" line="64" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               <node name="Point2D" line="65" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="Double" line="65" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="relativePoint" line="65" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="getRelativeLabelPoint" line="65" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                       <node name="BezierFigure" line="65" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                       </node>
+                       <node name="owner" line="65" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="label" line="65" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="return" line="66" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+             <node name="relativePoint" line="66" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="73" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+           <node name="Point2D" line="73" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="Double" line="73" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="getRelativePoint" line="73" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="BezierFigure" line="73" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="owner" line="73" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               <node name="Point2D" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="Double" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="point" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="owner" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="getPointOnPath" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                       <node name="float" line="74" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                       </node>
+                       <node name="relativePosition" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="3" line="74" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               <node name="Point2D" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="Double" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="nextPoint" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="owner" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="getPointOnPath" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="?" line="76" instruction_class="OPERATOR" instruction="CONDITIONAL_OPERATOR">
+                       <node name="&lt;" line="76" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+                         <node name="relativePosition" line="76" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="0.5" line="76" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                         </node>
+                       </node>
+                       <node name="+" line="76" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                         <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                           <node name="float" line="76" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                           </node>
+                           <node name="relativePosition" line="76" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="0.1f" line="76" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                         </node>
+                       </node>
+                       <node name="-" line="76" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                         <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                           <node name="float" line="76" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                           </node>
+                           <node name="relativePosition" line="76" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="0.1f" line="76" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                         </node>
+                       </node>
+                     </node>
+                     <node name="3" line="77" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="double" line="79" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="dir" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="Math" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="atan2" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="-" line="79" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="nextPoint" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                     <node name="-" line="79" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="nextPoint" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="x" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="x" line="79" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="if" line="80" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="GREATER_THAN_OR_EQUAL_TO" line="0" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+               <node name="relativePosition" line="80" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="0.5" line="80" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+               </node>
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="+=" line="81" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+                   <node name="dir" line="81" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="Math" line="81" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="PI" line="81" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="double" line="83" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="alpha" line="83" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="+" line="83" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                 <node name="dir" line="83" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="angle" line="83" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               <node name="Point2D" line="85" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="Double" line="85" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="p" line="85" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                 <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                   <node name="Point2D" line="85" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="Double" line="85" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="+" line="86" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="86" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="x" line="86" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="*" line="86" instruction_class="OPERATOR" instruction="MULTIPLICATIVE_OPERATOR">
+                         <node name="distance" line="86" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                             <node name="Math" line="86" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="cos" line="86" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                               <node name="alpha" line="86" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                     <node name="+" line="87" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="87" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="87" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="*" line="87" instruction_class="OPERATOR" instruction="MULTIPLICATIVE_OPERATOR">
+                         <node name="distance" line="87" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                             <node name="Math" line="87" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="sin" line="87" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                               <node name="alpha" line="87" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="if" line="90" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="Double" line="90" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="isNaN" line="90" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="p" line="90" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="x" line="90" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+             <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+               <node name="=" line="90" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+                 <node name="p" line="90" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="point" line="90" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+             </statement_node>
+           </statement_node>
+           <statement_node name="return" line="92" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+             <node name="p" line="92" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="100" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+           <node name="Point2D" line="100" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="Double" line="100" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="getRelativeLabelPoint" line="100" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="BezierFigure" line="100" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="owner" line="100" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Figure" line="100" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="label" line="100" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               <node name="Point2D" line="102" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="Double" line="102" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="point" line="102" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="owner" line="102" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="getPointOnPath" line="102" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                       <node name="float" line="102" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                       </node>
+                       <node name="relativePosition" line="102" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="3" line="102" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="if" line="103" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="==" line="103" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+               <node name="point" line="103" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="null" line="103" instruction_class="LITERAL" instruction="NULL_LITERAL">
+               </node>
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="return" line="104" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                 <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                   <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     <node name="Point2D" line="104" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="Double" line="104" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                       <node name="0" line="104" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                       </node>
+                       <node name="0" line="104" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               <node name="Point2D" line="106" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="Double" line="106" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="nextPoint" line="106" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="owner" line="106" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="getPointOnPath" line="106" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="?" line="107" instruction_class="OPERATOR" instruction="CONDITIONAL_OPERATOR">
+                       <node name="&lt;" line="107" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+                         <node name="relativePosition" line="107" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="0.5" line="107" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                         </node>
+                       </node>
+                       <node name="+" line="107" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                         <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                           <node name="float" line="107" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                           </node>
+                           <node name="relativePosition" line="107" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="0.1f" line="107" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                         </node>
+                       </node>
+                       <node name="-" line="107" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                         <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                           <node name="float" line="107" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                           </node>
+                           <node name="relativePosition" line="107" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="0.1f" line="107" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                         </node>
+                       </node>
+                     </node>
+                     <node name="3" line="108" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="double" line="110" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="dir" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="Math" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="atan2" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="-" line="110" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="nextPoint" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                     <node name="-" line="110" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="nextPoint" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="x" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="x" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="if" line="111" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="GREATER_THAN_OR_EQUAL_TO" line="0" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+               <node name="relativePosition" line="111" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="0.5" line="111" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+               </node>
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="+=" line="112" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+                   <node name="dir" line="112" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="Math" line="112" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="PI" line="112" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="double" line="114" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="alpha" line="114" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="+" line="114" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                 <node name="dir" line="114" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="angle" line="114" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               <node name="Point2D" line="116" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="Double" line="116" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="p" line="116" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                 <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                   <node name="Point2D" line="116" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="Double" line="116" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="+" line="117" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="117" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="x" line="117" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="*" line="117" instruction_class="OPERATOR" instruction="MULTIPLICATIVE_OPERATOR">
+                         <node name="distance" line="117" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                             <node name="Math" line="117" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="cos" line="117" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                               <node name="alpha" line="117" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                     <node name="+" line="118" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="118" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="118" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="*" line="118" instruction_class="OPERATOR" instruction="MULTIPLICATIVE_OPERATOR">
+                         <node name="distance" line="118" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                             <node name="Math" line="118" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="sin" line="118" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                               <node name="alpha" line="118" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="if" line="120" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="Double" line="120" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="isNaN" line="120" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="p" line="120" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="x" line="120" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+             <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+               <node name="=" line="120" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+                 <node name="p" line="120" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="point" line="120" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+             </statement_node>
+           </statement_node>
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Dimension2DDouble" line="122" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="labelDim" line="122" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="label" line="122" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="getPreferredSize" line="122" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="if" line="123" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="&amp;&amp;" line="124" instruction_class="OPERATOR" instruction="CONDITIONAL_OPERATOR">
+               <node name="&amp;&amp;" line="123" instruction_class="OPERATOR" instruction="CONDITIONAL_OPERATOR">
+                 <node name="==" line="123" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+                   <node name="relativePosition" line="123" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="0.5" line="123" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                   </node>
+                 </node>
+                 <node name="GREATER_THAN_OR_EQUAL_TO" line="0" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="p" line="124" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="x" line="124" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="-" line="124" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="point" line="124" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="x" line="124" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="/" line="124" instruction_class="OPERATOR" instruction="MULTIPLICATIVE_OPERATOR">
+                       <node name="distance" line="124" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="2" line="124" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+               <node name="LESS_THAN_OR_EQUAL_TO" line="0" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="p" line="125" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="x" line="125" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="+" line="125" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="point" line="125" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="x" line="125" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="/" line="125" instruction_class="OPERATOR" instruction="MULTIPLICATIVE_OPERATOR">
+                     <node name="distance" line="125" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="2" line="125" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="if" line="126" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+                 <node name="GREATER_THAN_OR_EQUAL_TO" line="0" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="p" line="126" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="y" line="126" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="point" line="126" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="y" line="126" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                 </node>
+                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                   <statement_node name="return" line="128" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                     <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                       <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                         <node name="Point2D" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="Double" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                         <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                           <node name="-" line="128" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="p" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="x" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="/" line="128" instruction_class="OPERATOR" instruction="MULTIPLICATIVE_OPERATOR">
+                               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                 <node name="labelDim" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                                 <node name="width" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                               <node name="2" line="128" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                               </node>
+                             </node>
+                           </node>
+                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                             <node name="p" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="y" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </statement_node>
+                 </statement_node>
+                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                   <statement_node name="return" line="131" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                     <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                       <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                         <node name="Point2D" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="Double" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                         <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                           <node name="-" line="131" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="p" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="x" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="/" line="131" instruction_class="OPERATOR" instruction="MULTIPLICATIVE_OPERATOR">
+                               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                 <node name="labelDim" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                                 <node name="width" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                               <node name="2" line="131" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                               </node>
+                             </node>
+                           </node>
+                           <node name="-" line="131" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="p" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="y" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="labelDim" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="height" line="131" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </statement_node>
+                 </statement_node>
+               </statement_node>
+             </statement_node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="if" line="134" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+                 <node name="GREATER_THAN_OR_EQUAL_TO" line="0" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="p" line="134" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="x" line="134" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="point" line="134" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="x" line="134" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                 </node>
+                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                   <statement_node name="if" line="135" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+                     <node name="GREATER_THAN_OR_EQUAL_TO" line="0" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="p" line="135" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="135" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="135" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="135" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                     <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                       <statement_node name="return" line="137" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                         <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                           <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             <node name="Point2D" line="137" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="Double" line="137" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                 <node name="p" line="137" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                                 <node name="x" line="137" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                 <node name="p" line="137" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                                 <node name="y" line="137" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </statement_node>
+                     </statement_node>
+                     <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                       <statement_node name="return" line="140" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                         <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                           <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             <node name="Point2D" line="140" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="Double" line="140" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                 <node name="p" line="140" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                                 <node name="x" line="140" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                               <node name="-" line="140" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="p" line="140" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="y" line="140" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="labelDim" line="140" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="height" line="140" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </statement_node>
+                     </statement_node>
+                   </statement_node>
+                 </statement_node>
+                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                   <statement_node name="if" line="143" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+                     <node name="GREATER_THAN_OR_EQUAL_TO" line="0" instruction_class="OPERATOR" instruction="RELATIONAL_OPERATOR">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="p" line="143" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="143" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="point" line="143" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="y" line="143" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                     <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                       <statement_node name="return" line="145" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                         <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                           <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             <node name="Point2D" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="Double" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                               <node name="-" line="145" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="p" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="x" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="labelDim" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="width" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                               </node>
+                               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                 <node name="p" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                                 <node name="y" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </statement_node>
+                     </statement_node>
+                     <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                       <statement_node name="return" line="148" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                         <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                           <node name="SELECT" line="0" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             <node name="Point2D" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="Double" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                               <node name="-" line="148" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="p" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="x" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="labelDim" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="width" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                               </node>
+                               <node name="-" line="148" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="p" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="y" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="labelDim" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="height" line="148" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </statement_node>
+                     </statement_node>
+                   </statement_node>
+                 </statement_node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="225" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="read" line="225" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="DOMInput" line="225" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="in" line="225" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="226" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="relativePosition" line="226" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="in" line="226" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="getAttribute" line="226" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="&quot;relativePosition&quot;" line="226" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                     </node>
+                     <node name="0d" line="226" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="227" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="angle" line="227" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="in" line="227" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="getAttribute" line="227" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="&quot;angle&quot;" line="227" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                     </node>
+                     <node name="0d" line="227" instruction_class="LITERAL" instruction="FLOATING_POINT_LITERAL">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="228" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="distance" line="228" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="in" line="228" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="getAttribute" line="228" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="&quot;distance&quot;" line="228" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                     </node>
+                     <node name="0" line="228" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="232" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="write" line="232" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="DOMOutput" line="232" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="out" line="232" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="out" line="233" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="addAttribute" line="233" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="&quot;relativePosition&quot;" line="233" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                   </node>
+                   <node name="relativePosition" line="233" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="out" line="234" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="addAttribute" line="234" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="&quot;angle&quot;" line="234" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                   </node>
+                   <node name="angle" line="234" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="out" line="235" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="addAttribute" line="235" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="&quot;distance&quot;" line="235" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                   </node>
+                   <node name="distance" line="235" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+     </node>
+   </class_statement_node>
+ </node>
+</srcfile>

@@ -1,0 +1,2107 @@
+<?xml version="1.0" ?>
+<srcfile name="OSXAdapter.java" file_path="/Users/valerio/Research/Code/Source Code Comments Classification/comments_classification/media/jhotdraw/7.4.1/jhotdraw7zip/extracted/jhotdraw7/src/main/java/org/jhotdraw/app/osx/OSXAdapter.java" >
+ <node name="COMPILATION_UNIT" line="0" instruction_class="COMPILATION_UNIT" instruction="COMPILATION_UNIT">
+   <node name="PACKAGE_DECLARATION" line="0" instruction_class="KEYWORD" instruction="PACKAGE_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+           <node name="org" line="72" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="jhotdraw" line="72" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="app" line="72" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="osx" line="72" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <node name="SINGLE_TYPE_IMPORT_DECLARATION" line="0" instruction_class="KEYWORD" instruction="IMPORT_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+           <node name="java" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="awt" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="event" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="ActionEvent" line="74" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <node name="SINGLE_TYPE_IMPORT_DECLARATION" line="0" instruction_class="KEYWORD" instruction="IMPORT_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+           <node name="java" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="awt" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <node name="event" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="ActionListener" line="75" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <node name="TYPE_IMPORT_ON_DEMAND_DECLARATION" line="0" instruction_class="KEYWORD" instruction="IMPORT_KEYWORD">
+     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+         <node name="java" line="76" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="lang" line="76" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+       </node>
+       <node name="reflect" line="76" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+       </node>
+     </node>
+   </node>
+   <class_statement_node name="CLASS_DECLARATION" line="0" instruction_class="CLASS_DECLARATION" instruction="CLASS_KEYWORD">
+     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+       <node name="public" line="93" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+       </node>
+     </node>
+     <node name="OSXAdapter" line="93" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+     </node>
+     <node name="implements" line="93" instruction_class="KEYWORD" instruction="INTERFACE_IMPLEMENTATION_KEYWORD">
+       <node name="InvocationHandler" line="93" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+       </node>
+     </node>
+     <node name="CLASS_BODY" line="0" instruction_class="CLASS_BODY" instruction="CLASS_BODY">
+       <statement_node name="FIELD_DECLARATION" line="0" instruction_class="FIELD_DECLARATION" instruction="FIELD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="protected" line="95" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="ActionListener" line="95" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+         </node>
+         <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+           <node name="targetAction" line="95" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+       </statement_node>
+       <statement_node name="FIELD_DECLARATION" line="0" instruction_class="FIELD_DECLARATION" instruction="FIELD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="protected" line="96" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="Object" line="96" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+         </node>
+         <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+           <node name="targetObject" line="96" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+       </statement_node>
+       <statement_node name="FIELD_DECLARATION" line="0" instruction_class="FIELD_DECLARATION" instruction="FIELD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="protected" line="97" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="Method" line="97" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+         </node>
+         <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+           <node name="targetMethod" line="97" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+       </statement_node>
+       <statement_node name="FIELD_DECLARATION" line="0" instruction_class="FIELD_DECLARATION" instruction="FIELD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="protected" line="98" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="String" line="98" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+         </node>
+         <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+           <node name="proxySignature" line="98" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+       </statement_node>
+       <statement_node name="FIELD_DECLARATION" line="0" instruction_class="FIELD_DECLARATION" instruction="FIELD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="static" line="99" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="Object" line="99" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+         </node>
+         <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+           <node name="macOSXApplication" line="99" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+       </statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="110" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+           <node name="static" line="110" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setOpenApplicationHandler" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ActionListener" line="110" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="openHandler" line="110" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="setHandler" line="111" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                     <node name="OSXAdapter" line="111" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;handleOpenApplication&quot;" line="111" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                         <node name="openHandler" line="111" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="121" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+           <node name="static" line="121" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setReOpenApplicationHandler" line="121" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ActionListener" line="121" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="reopenHandler" line="121" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="setHandler" line="122" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                     <node name="OSXAdapter" line="122" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;handleReOpenApplication&quot;" line="122" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                         <node name="reopenHandler" line="122" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="128" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+           <node name="static" line="128" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setQuitHandler" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ActionListener" line="128" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="aboutHandler" line="128" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="setHandler" line="129" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                     <node name="OSXAdapter" line="129" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;handleQuit&quot;" line="129" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                         <node name="aboutHandler" line="129" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                     <node name="CLASS_BODY" line="0" instruction_class="CLASS_BODY" instruction="CLASS_BODY">
+                       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+                         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                           <node name="MARKER_ANNOTATION" line="0" instruction_class="MARKER_ANNOTATION" instruction="MARKER_ANNOTATION">
+                             <node name="Override" line="132" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="public" line="133" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+                           </node>
+                         </node>
+                         <node name="boolean" line="133" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                         </node>
+                         <node name="callTarget" line="133" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+                           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                             </node>
+                             <node name="Object" line="133" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             </node>
+                             <node name="appleEvent" line="133" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                         <node name="throws" line="133" instruction_class="throws" instruction="throws">
+                           <node name="InvocationTargetException" line="133" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                           <node name="IllegalAccessException" line="133" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+                           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                 <node name="UNQUALIFIED_SUPER" line="0" instruction_class="UNQUALIFIED_SUPER" instruction="UNQUALIFIED_SUPER">
+                                 </node>
+                                 <node name="callTarget" line="134" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                   <node name="appleEvent" line="134" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                               </node>
+                             </node>
+                           </statement_node>
+                           <statement_node name="return" line="135" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                             <node name="false" line="135" instruction_class="LITERAL" instruction="BOOLEAN_LITERAL">
+                             </node>
+                           </statement_node>
+                         </statement_node>
+                       </method_statement_node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="144" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+           <node name="static" line="144" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setAboutHandler" line="144" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ActionListener" line="144" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="aboutHandler" line="144" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="boolean" line="145" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="enableAboutMenu" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="!=" line="145" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+                 <node name="aboutHandler" line="145" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="null" line="145" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="if" line="146" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="enableAboutMenu" line="146" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                   <node name="setHandler" line="147" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                       <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                         <node name="OSXAdapter" line="147" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                           <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                             <node name="&quot;handleAbout&quot;" line="147" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                             </node>
+                             <node name="aboutHandler" line="147" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+           <statement_node name="try" line="151" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_TRY">
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Method" line="152" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                   <node name="enableAboutMethod" line="152" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                           <node name="macOSXApplication" line="152" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                           <node name="getClass" line="152" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                         </node>
+                       </node>
+                       <node name="getDeclaredMethod" line="152" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;setEnabledAboutMenu&quot;" line="152" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                         <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                           <node name="Class" line="152" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                           </node>
+                           <node name="[" line="152" instruction_class="[" instruction="[">
+                           </node>
+                           <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                             <node name="CLASS_DESIGNATOR" line="0" instruction_class="CLASS_DESIGNATOR" instruction="CLASS_DESIGNATOR">
+                               <node name="boolean" line="152" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="enableAboutMethod" line="153" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="invoke" line="153" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                       <node name="macOSXApplication" line="153" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                         <node name="Object" line="153" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                         </node>
+                         <node name="[" line="153" instruction_class="[" instruction="[">
+                         </node>
+                         <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                           <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="Boolean" line="153" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="valueOf" line="153" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                               <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                 <node name="enableAboutMenu" line="153" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+             <node name="catch" line="154" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_CATCH">
+               <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Exception" line="154" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="ex" line="154" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                 <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="System" line="155" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="err" line="155" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="println" line="155" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;OSXAdapter could not access the About Menu&quot;" line="155" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </statement_node>
+                 <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="ex" line="156" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="printStackTrace" line="156" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     </node>
+                   </node>
+                 </statement_node>
+               </statement_node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="166" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+           <node name="static" line="166" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setPreferencesHandler" line="166" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ActionListener" line="166" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="prefsHandler" line="166" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="boolean" line="167" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+               <node name="enablePrefsMenu" line="167" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="!=" line="167" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+                 <node name="prefsHandler" line="167" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+                 <node name="null" line="167" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="if" line="168" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="enablePrefsMenu" line="168" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                   <node name="setHandler" line="169" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                       <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                         <node name="OSXAdapter" line="169" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                           <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                             <node name="&quot;handlePreferences&quot;" line="169" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                             </node>
+                             <node name="prefsHandler" line="169" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+           <statement_node name="try" line="173" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_TRY">
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Method" line="174" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                   <node name="enablePrefsMethod" line="174" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                           <node name="macOSXApplication" line="174" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                           <node name="getClass" line="174" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                         </node>
+                       </node>
+                       <node name="getDeclaredMethod" line="174" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;setEnabledPreferencesMenu&quot;" line="174" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                         <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                           <node name="Class" line="174" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                           </node>
+                           <node name="[" line="174" instruction_class="[" instruction="[">
+                           </node>
+                           <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                             <node name="CLASS_DESIGNATOR" line="0" instruction_class="CLASS_DESIGNATOR" instruction="CLASS_DESIGNATOR">
+                               <node name="boolean" line="174" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="enablePrefsMethod" line="175" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="invoke" line="175" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                       <node name="macOSXApplication" line="175" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                         <node name="Object" line="175" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                         </node>
+                         <node name="[" line="175" instruction_class="[" instruction="[">
+                         </node>
+                         <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                           <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="Boolean" line="175" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="valueOf" line="175" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                               <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                 <node name="enablePrefsMenu" line="175" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+             <node name="catch" line="176" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_CATCH">
+               <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Exception" line="176" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="ex" line="176" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                 <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="System" line="177" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="err" line="177" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="println" line="177" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;OSXAdapter could not access the Preferences Menu&quot;" line="177" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </statement_node>
+                 <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="ex" line="178" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="printStackTrace" line="178" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     </node>
+                   </node>
+                 </statement_node>
+               </statement_node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="190" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+           <node name="static" line="190" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setOpenFileHandler" line="190" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ActionListener" line="190" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="fileHandler" line="190" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="setHandler" line="191" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                     <node name="OSXAdapter" line="191" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;handleOpenFile&quot;" line="191" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                         <node name="fileHandler" line="191" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                     <node name="CLASS_BODY" line="0" instruction_class="CLASS_BODY" instruction="CLASS_BODY">
+                       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+                         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                           <node name="MARKER_ANNOTATION" line="0" instruction_class="MARKER_ANNOTATION" instruction="MARKER_ANNOTATION">
+                             <node name="Override" line="195" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="public" line="196" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+                           </node>
+                         </node>
+                         <node name="boolean" line="196" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                         </node>
+                         <node name="callTarget" line="196" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+                           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                             </node>
+                             <node name="Object" line="196" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             </node>
+                             <node name="appleEvent" line="196" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+                           <statement_node name="if" line="197" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+                             <node name="!=" line="197" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+                               <node name="appleEvent" line="197" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="null" line="197" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                               </node>
+                             </node>
+                             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                               <statement_node name="try" line="198" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_TRY">
+                                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                                   <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                                     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                                     </node>
+                                     <node name="Method" line="199" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                     </node>
+                                     <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                                       <node name="getFilenameMethod" line="199" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                       </node>
+                                       <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                           <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                               <node name="appleEvent" line="199" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                               </node>
+                                               <node name="getClass" line="199" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                               </node>
+                                             </node>
+                                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                             </node>
+                                           </node>
+                                           <node name="getDeclaredMethod" line="199" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                           </node>
+                                         </node>
+                                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                           <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                             <node name="&quot;getFilename&quot;" line="199" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                                             </node>
+                                             <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                                               <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+                                                 <node name="Class" line="199" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                                 </node>
+                                               </node>
+                                               <node name="null" line="199" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                                               </node>
+                                             </node>
+                                           </node>
+                                         </node>
+                                       </node>
+                                     </node>
+                                   </statement_node>
+                                   <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                                     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                                     </node>
+                                     <node name="String" line="200" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                     </node>
+                                     <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                                       <node name="filename" line="200" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                       </node>
+                                       <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                                         <node name="String" line="200" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                         </node>
+                                         <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                             <node name="getFilenameMethod" line="200" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                             </node>
+                                             <node name="invoke" line="200" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                             </node>
+                                           </node>
+                                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                               <node name="appleEvent" line="200" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                               </node>
+                                               <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                                                 <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+                                                   <node name="Object" line="200" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                                   </node>
+                                                 </node>
+                                                 <node name="null" line="200" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                                                 </node>
+                                               </node>
+                                             </node>
+                                           </node>
+                                         </node>
+                                       </node>
+                                     </node>
+                                   </statement_node>
+                                   <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                                     <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                         <node name="targetAction" line="201" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                         </node>
+                                         <node name="actionPerformed" line="201" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                         </node>
+                                       </node>
+                                       <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                         <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                           <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                                             <node name="ActionEvent" line="201" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                             </node>
+                                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                               <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                                                 </node>
+                                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                                   <node name="ActionEvent" line="201" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                                   </node>
+                                                   <node name="ACTION_PERFORMED" line="201" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                                   </node>
+                                                 </node>
+                                                 <node name="filename" line="201" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                                 </node>
+                                               </node>
+                                             </node>
+                                           </node>
+                                         </node>
+                                       </node>
+                                     </node>
+                                   </statement_node>
+                                 </statement_node>
+                                 <node name="catch" line="202" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_CATCH">
+                                   <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                                     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                                     </node>
+                                     <node name="Exception" line="202" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                     </node>
+                                     <node name="ex" line="202" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                     </node>
+                                   </node>
+                                   <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                                   </statement_node>
+                                 </node>
+                               </statement_node>
+                             </statement_node>
+                           </statement_node>
+                           <statement_node name="return" line="205" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                             <node name="true" line="205" instruction_class="LITERAL" instruction="BOOLEAN_LITERAL">
+                             </node>
+                           </statement_node>
+                         </statement_node>
+                       </method_statement_node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="217" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+           <node name="static" line="217" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setPrintFileHandler" line="217" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ActionListener" line="217" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="fileHandler" line="217" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="setHandler" line="218" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                     <node name="OSXAdapter" line="218" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;handlePrintFile&quot;" line="218" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                         <node name="fileHandler" line="218" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                     <node name="CLASS_BODY" line="0" instruction_class="CLASS_BODY" instruction="CLASS_BODY">
+                       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+                         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                           <node name="MARKER_ANNOTATION" line="0" instruction_class="MARKER_ANNOTATION" instruction="MARKER_ANNOTATION">
+                             <node name="Override" line="222" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="public" line="223" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+                           </node>
+                         </node>
+                         <node name="boolean" line="223" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                         </node>
+                         <node name="callTarget" line="223" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+                           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                             </node>
+                             <node name="Object" line="223" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             </node>
+                             <node name="appleEvent" line="223" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+                           <statement_node name="if" line="224" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+                             <node name="!=" line="224" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+                               <node name="appleEvent" line="224" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="null" line="224" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                               </node>
+                             </node>
+                             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                               <statement_node name="try" line="225" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_TRY">
+                                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                                   <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                                     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                                     </node>
+                                     <node name="Method" line="226" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                     </node>
+                                     <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                                       <node name="getFilenameMethod" line="226" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                       </node>
+                                       <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                           <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                               <node name="appleEvent" line="226" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                               </node>
+                                               <node name="getClass" line="226" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                               </node>
+                                             </node>
+                                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                             </node>
+                                           </node>
+                                           <node name="getDeclaredMethod" line="226" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                           </node>
+                                         </node>
+                                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                           <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                             <node name="&quot;getFilename&quot;" line="226" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                                             </node>
+                                             <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                                               <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+                                                 <node name="Class" line="226" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                                 </node>
+                                               </node>
+                                               <node name="null" line="226" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                                               </node>
+                                             </node>
+                                           </node>
+                                         </node>
+                                       </node>
+                                     </node>
+                                   </statement_node>
+                                   <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                                     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                                     </node>
+                                     <node name="String" line="227" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                     </node>
+                                     <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                                       <node name="filename" line="227" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                       </node>
+                                       <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                                         <node name="String" line="227" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                         </node>
+                                         <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                             <node name="getFilenameMethod" line="227" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                             </node>
+                                             <node name="invoke" line="227" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                             </node>
+                                           </node>
+                                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                             <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                               <node name="appleEvent" line="227" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                               </node>
+                                               <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                                                 <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+                                                   <node name="Object" line="227" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                                   </node>
+                                                 </node>
+                                                 <node name="null" line="227" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                                                 </node>
+                                               </node>
+                                             </node>
+                                           </node>
+                                         </node>
+                                       </node>
+                                     </node>
+                                   </statement_node>
+                                   <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                                     <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                         <node name="targetAction" line="228" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                         </node>
+                                         <node name="actionPerformed" line="228" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                         </node>
+                                       </node>
+                                       <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                         <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                           <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                                             <node name="ActionEvent" line="228" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                             </node>
+                                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                               <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                                                 </node>
+                                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                                   <node name="ActionEvent" line="228" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                                   </node>
+                                                   <node name="ACTION_PERFORMED" line="228" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                                   </node>
+                                                 </node>
+                                                 <node name="filename" line="228" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                                 </node>
+                                               </node>
+                                             </node>
+                                           </node>
+                                         </node>
+                                       </node>
+                                     </node>
+                                   </statement_node>
+                                 </statement_node>
+                                 <node name="catch" line="229" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_CATCH">
+                                   <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                                     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                                     </node>
+                                     <node name="Exception" line="229" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                     </node>
+                                     <node name="ex" line="229" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                     </node>
+                                   </node>
+                                   <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                                   </statement_node>
+                                 </node>
+                               </statement_node>
+                             </statement_node>
+                           </statement_node>
+                           <statement_node name="return" line="232" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                             <node name="true" line="232" instruction_class="LITERAL" instruction="BOOLEAN_LITERAL">
+                             </node>
+                           </statement_node>
+                         </statement_node>
+                       </method_statement_node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="SINGLE_ELEMENT_ANNOTATION" line="0" instruction_class="SINGLE_ELEMENT_ANNOTATION" instruction="SINGLE_ELEMENT_ANNOTATION">
+             <node name="SuppressWarnings" line="241" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+             <node name="&quot;unchecked&quot;" line="241" instruction_class="LITERAL" instruction="STRING_LITERAL">
+             </node>
+           </node>
+           <node name="public" line="242" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+           <node name="static" line="242" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setHandler" line="242" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="OSXAdapter" line="242" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="adapter" line="242" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="try" line="243" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_TRY">
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Class" line="244" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                   <node name="applicationClass" line="244" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="Class" line="244" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="forName" line="244" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;com.apple.eawt.Application&quot;" line="244" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="if" line="245" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+                 <node name="==" line="245" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+                   <node name="macOSXApplication" line="245" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="null" line="245" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                   </node>
+                 </node>
+                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                   <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                     <node name="=" line="246" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+                       <node name="macOSXApplication" line="246" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                           <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="applicationClass" line="246" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="getConstructor" line="246" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                               <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                 <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                                   <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+                                     <node name="Class" line="246" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                     </node>
+                                   </node>
+                                   <node name="null" line="246" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                                   </node>
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                           <node name="newInstance" line="246" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                           <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                             <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                               <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+                                 <node name="Object" line="246" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                                 </node>
+                               </node>
+                               <node name="null" line="246" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </statement_node>
+                 </statement_node>
+               </statement_node>
+               <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Class" line="248" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                   <node name="applicationListenerClass" line="248" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="Class" line="248" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="forName" line="248" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;com.apple.eawt.ApplicationListener&quot;" line="248" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Method" line="249" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                   <node name="addListenerMethod" line="249" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="applicationClass" line="249" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="getDeclaredMethod" line="249" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;addApplicationListener&quot;" line="249" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                         <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                           <node name="Class" line="249" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                           </node>
+                           <node name="[" line="249" instruction_class="[" instruction="[">
+                           </node>
+                           <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                             <node name="applicationListenerClass" line="249" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Object" line="251" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                   <node name="osxAdapterProxy" line="251" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="Proxy" line="251" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="newProxyInstance" line="251" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                             <node name="CLASS_DESIGNATOR" line="0" instruction_class="CLASS_DESIGNATOR" instruction="CLASS_DESIGNATOR">
+                               <node name="OSXAdapter" line="251" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="getClassLoader" line="251" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                           </node>
+                         </node>
+                         <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                           <node name="Class" line="251" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                           </node>
+                           <node name="[" line="251" instruction_class="[" instruction="[">
+                           </node>
+                           <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                             <node name="applicationListenerClass" line="251" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                         <node name="adapter" line="251" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="addListenerMethod" line="252" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="invoke" line="252" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                       <node name="macOSXApplication" line="252" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                         <node name="Object" line="252" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                         </node>
+                         <node name="[" line="252" instruction_class="[" instruction="[">
+                         </node>
+                         <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                           <node name="osxAdapterProxy" line="252" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+             <node name="catch" line="253" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_CATCH">
+               <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="ClassNotFoundException" line="253" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="cnfe" line="253" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                 <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="System" line="254" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="err" line="254" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="println" line="254" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="+" line="254" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                           <node name="+" line="254" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                             <node name="&quot;This version of Mac OS X does not support the Apple EAWT.  ApplicationEvent handling has been disabled (&quot;" line="254" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                             </node>
+                             <node name="cnfe" line="254" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="&quot;)&quot;" line="254" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </statement_node>
+               </statement_node>
+             </node>
+             <node name="catch" line="255" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_CATCH">
+               <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Exception" line="255" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="ex" line="255" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                 <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="System" line="256" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="err" line="256" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="println" line="256" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="&quot;Mac OS X Adapter could not talk to EAWT:&quot;" line="256" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </statement_node>
+                 <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="ex" line="257" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="printStackTrace" line="257" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     </node>
+                   </node>
+                 </statement_node>
+               </statement_node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="CONSTRUCTOR_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="CONSTRUCTOR_METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="protected" line="266" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="OSXAdapter" line="266" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="String" line="266" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="proxySignature" line="266" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Object" line="266" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="target" line="266" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Method" line="266" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="handler" line="266" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="CONSTRUCTOR_BODY" line="0" instruction_class="CONSTRUCTOR_BODY" instruction="CONSTRUCTOR_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="267" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                 </node>
+                 <node name="proxySignature" line="267" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="proxySignature" line="267" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="268" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                 </node>
+                 <node name="targetObject" line="268" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="target" line="268" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="269" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                 </node>
+                 <node name="targetMethod" line="269" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="handler" line="269" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="CONSTRUCTOR_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="CONSTRUCTOR_METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="protected" line="277" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="OSXAdapter" line="277" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="String" line="277" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="proxySignature" line="277" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ActionListener" line="277" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="handler" line="277" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="CONSTRUCTOR_BODY" line="0" instruction_class="CONSTRUCTOR_BODY" instruction="CONSTRUCTOR_BODY">
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="278" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                 </node>
+                 <node name="proxySignature" line="278" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="proxySignature" line="278" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+           </statement_node>
+           <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+             <node name="=" line="279" instruction_class="OPERATOR" instruction="ASSIGNEMENT_OPERATOR">
+               <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                 <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                 </node>
+                 <node name="targetAction" line="279" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                 </node>
+               </node>
+               <node name="handler" line="279" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="public" line="286" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="boolean" line="286" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+         </node>
+         <node name="callTarget" line="286" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Object" line="286" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="appleEvent" line="286" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <node name="throws" line="286" instruction_class="throws" instruction="throws">
+           <node name="InvocationTargetException" line="286" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+           <node name="IllegalAccessException" line="286" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="if" line="287" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="!=" line="287" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+               <node name="targetAction" line="287" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="null" line="287" instruction_class="LITERAL" instruction="NULL_LITERAL">
+               </node>
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="targetAction" line="288" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="actionPerformed" line="288" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                       <node name="UNQUALIFIED_CLASS_INSTANCE_CREATION" line="0" instruction_class="UNQUALIFIED_CLASS_INSTANCE_CREATION" instruction="UNQUALIFIED_CLASS_INSTANCE_CREATION">
+                         <node name="ActionEvent" line="288" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                           <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                             <node name="THIS" line="0" instruction_class="THIS" instruction="THIS">
+                             </node>
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="ActionEvent" line="288" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="ACTION_PERFORMED" line="288" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="proxySignature" line="288" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="return" line="289" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                 <node name="true" line="289" instruction_class="LITERAL" instruction="BOOLEAN_LITERAL">
+                 </node>
+               </statement_node>
+             </statement_node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="Object" line="291" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                 </node>
+                 <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                   <node name="result" line="291" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                       <node name="targetMethod" line="291" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="invoke" line="291" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="targetObject" line="291" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="CAST" line="0" instruction_class="CAST" instruction="CAST">
+                           <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+                             <node name="Object" line="291" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             </node>
+                           </node>
+                           <node name="null" line="291" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="if" line="292" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+                 <node name="==" line="292" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+                   <node name="result" line="292" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="null" line="292" instruction_class="LITERAL" instruction="NULL_LITERAL">
+                   </node>
+                 </node>
+                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                   <statement_node name="return" line="293" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                     <node name="true" line="293" instruction_class="LITERAL" instruction="BOOLEAN_LITERAL">
+                     </node>
+                   </statement_node>
+                 </statement_node>
+               </statement_node>
+               <statement_node name="return" line="295" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+                 <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                   <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                     <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="Boolean" line="295" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="valueOf" line="295" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                         <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                           <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="result" line="295" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="toString" line="295" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                     <node name="booleanValue" line="295" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="MARKER_ANNOTATION" line="0" instruction_class="MARKER_ANNOTATION" instruction="MARKER_ANNOTATION">
+             <node name="Override" line="304" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="public" line="305" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="Object" line="305" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+         </node>
+         <node name="invoke" line="305" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Object" line="305" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="proxy" line="305" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Method" line="305" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="method" line="305" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+               <node name="Object" line="305" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               </node>
+             </node>
+             <node name="args" line="305" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <node name="throws" line="305" instruction_class="throws" instruction="throws">
+           <node name="Throwable" line="305" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="if" line="306" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+               <node name="isCorrectMethod" line="306" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                 <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                   <node name="method" line="306" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="args" line="306" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+               </node>
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                 <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                 </node>
+                 <node name="boolean" line="307" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                 </node>
+                 <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                   <node name="handled" line="307" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                     <node name="callTarget" line="307" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                     <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                         <node name="ARRAY_ACCESS" line="0" instruction_class="ARRAY_ACCESS" instruction="ARRAY_ACCESS">
+                           <node name="args" line="307" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                           <node name="0" line="307" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+               <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                 <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                   <node name="setApplicationEventHandled" line="308" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                     <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                       <node name="ARRAY_ACCESS" line="0" instruction_class="ARRAY_ACCESS" instruction="ARRAY_ACCESS">
+                         <node name="args" line="308" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="0" line="308" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                         </node>
+                       </node>
+                       <node name="handled" line="308" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+           <statement_node name="return" line="312" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+             <node name="null" line="312" instruction_class="LITERAL" instruction="NULL_LITERAL">
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="protected" line="320" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="boolean" line="320" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+         </node>
+         <node name="isCorrectMethod" line="320" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Method" line="320" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="method" line="320" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="ARRAY_OF" line="0" instruction_class="ARRAY_OF" instruction="ARRAY_OF">
+               <node name="Object" line="320" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+               </node>
+             </node>
+             <node name="args" line="320" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="return" line="321" instruction_class="CONTROLFLOW_STATEMENT" instruction="RETURN_STATEMENT">
+             <node name="&amp;&amp;" line="321" instruction_class="OPERATOR" instruction="CONDITIONAL_OPERATOR">
+               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="proxySignature" line="321" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="equals" line="321" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                     <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="method" line="321" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="getName" line="321" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                       </node>
+                     </node>
+                   </node>
+                 </node>
+               </node>
+               <node name="==" line="321" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                   <node name="args" line="321" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                   <node name="length" line="321" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                   </node>
+                 </node>
+                 <node name="1" line="321" instruction_class="LITERAL" instruction="INTEGER_LITERAL">
+                 </node>
+               </node>
+             </node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+       <method_statement_node name="METHOD_DECLARATION" line="0" instruction_class="METHOD_DECLARATION" instruction="METHOD_DECLARATION">
+         <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+           <node name="protected" line="330" instruction_class="MODIFIER" instruction="ACCESS_LEVEL_MODIFIER">
+           </node>
+         </node>
+         <node name="VOID" line="0" instruction_class="VOID" instruction="VOID">
+         </node>
+         <node name="setApplicationEventHandled" line="330" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+         </node>
+         <node name="FORMAL_PARAMETERS" line="0" instruction_class="FORMAL_PARAMETERS" instruction="FORMAL_PARAMETERS">
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="Object" line="330" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+             </node>
+             <node name="event" line="330" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+           <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+             <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+             </node>
+             <node name="boolean" line="330" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+             </node>
+             <node name="handled" line="330" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+             </node>
+           </node>
+         </node>
+         <statement_node name="METHOD_BODY" line="0" instruction_class="METHOD_BODY" instruction="METHOD_BODY">
+           <statement_node name="if" line="331" instruction_class="CONDITIONAL_STATEMENT" instruction="IF_STATEMENT">
+             <node name="!=" line="331" instruction_class="OPERATOR" instruction="EQUALITY_OPERATOR">
+               <node name="event" line="331" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+               </node>
+               <node name="null" line="331" instruction_class="LITERAL" instruction="NULL_LITERAL">
+               </node>
+             </node>
+             <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+               <statement_node name="try" line="332" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_TRY">
+                 <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                   <statement_node name="LOCAL_VARIABLE_DECLARATION" line="0" instruction_class="LOCAL_VARIABLE_DECLARATION" instruction="LOCAL_VARIABLE_DECLARATION">
+                     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                     </node>
+                     <node name="Method" line="333" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     </node>
+                     <node name="VARIABLE_DECLARATOR" line="0" instruction_class="VARIABLE_DECLARATOR" instruction="VARIABLE_DECLARATOR">
+                       <node name="setHandledMethod" line="333" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                       </node>
+                       <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                           <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                             <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                               <node name="event" line="333" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                               <node name="getClass" line="333" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                             <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                             </node>
+                           </node>
+                           <node name="getDeclaredMethod" line="333" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                           <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                             <node name="&quot;setHandled&quot;" line="333" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                             </node>
+                             <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                               <node name="Class" line="333" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                               </node>
+                               <node name="[" line="333" instruction_class="[" instruction="[">
+                               </node>
+                               <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                                 <node name="CLASS_DESIGNATOR" line="0" instruction_class="CLASS_DESIGNATOR" instruction="CLASS_DESIGNATOR">
+                                   <node name="boolean" line="333" instruction_class="TYPE" instruction="PRIMITIVE_TYPE">
+                                   </node>
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </statement_node>
+                   <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                     <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                       <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                         <node name="setHandledMethod" line="335" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                         <node name="invoke" line="335" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                         </node>
+                       </node>
+                       <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                         <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                           <node name="event" line="335" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                           <node name="NEW_INITIALIZED_ARRAY" line="0" instruction_class="NEW_INITIALIZED_ARRAY" instruction="NEW_INITIALIZED_ARRAY">
+                             <node name="Object" line="335" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                             </node>
+                             <node name="[" line="335" instruction_class="[" instruction="[">
+                             </node>
+                             <node name="ARRAY_INITIALIZER" line="0" instruction_class="ARRAY_INITIALIZER" instruction="ARRAY_INITIALIZER">
+                               <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                                 <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                                   <node name="Boolean" line="335" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                   <node name="valueOf" line="335" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                   </node>
+                                 </node>
+                                 <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                                   <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                                     <node name="handled" line="335" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                                     </node>
+                                   </node>
+                                 </node>
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </node>
+                   </statement_node>
+                 </statement_node>
+                 <node name="catch" line="336" instruction_class="CONTROLFLOW_STATEMENT" instruction="EXCEPTION_CATCH">
+                   <node name="FORMAL_PARAMETER" line="0" instruction_class="FORMAL_PARAMETER" instruction="FORMAL_PARAMETER">
+                     <node name="MODIFIERS" line="0" instruction_class="MODIFIERS" instruction="MODIFIERS">
+                     </node>
+                     <node name="Exception" line="336" instruction_class="TYPE" instruction="CLASS_OR_INTERFACE_TYPE">
+                     </node>
+                     <node name="ex" line="336" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                     </node>
+                   </node>
+                   <statement_node name="BLOCK" line="0" instruction_class="BLOCK" instruction="BLOCK">
+                     <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                       <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                           <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                             <node name="System" line="337" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                             <node name="err" line="337" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                             </node>
+                           </node>
+                           <node name="println" line="337" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                           <node name="EXPRESSION_LIST" line="0" instruction_class="EXPRESSION_LIST" instruction="EXPRESSION_LIST">
+                             <node name="+" line="337" instruction_class="OPERATOR" instruction="ADDITIVE_OPERATOR">
+                               <node name="&quot;OSXAdapter was unable to handle an ApplicationEvent: &quot;" line="337" instruction_class="LITERAL" instruction="STRING_LITERAL">
+                               </node>
+                               <node name="event" line="337" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                               </node>
+                             </node>
+                           </node>
+                         </node>
+                       </node>
+                     </statement_node>
+                     <statement_node name="EXPRESSION_STATEMENT" line="0" instruction_class="EXPRESSION_STATEMENT" instruction="EXPRESSION_STATEMENT">
+                       <node name="CALL" line="0" instruction_class="CALL" instruction="CALL">
+                         <node name="SELECT" line="0" instruction_class="SELECT" instruction="SELECT">
+                           <node name="ex" line="338" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                           <node name="printStackTrace" line="338" instruction_class="IDENTIFIER" instruction="IDENTIFIER">
+                           </node>
+                         </node>
+                         <node name="ARGUMENTS" line="0" instruction_class="ARGUMENTS" instruction="ARGUMENTS">
+                         </node>
+                       </node>
+                     </statement_node>
+                   </statement_node>
+                 </node>
+               </statement_node>
+             </statement_node>
+           </statement_node>
+         </statement_node>
+       </method_statement_node>
+     </node>
+   </class_statement_node>
+ </node>
+</srcfile>
